@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
+   <title>SHOW ROOM FACADE</title>
+	</head>
+
+</body>
+
+</br>
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">SHOW ROOM</li>
+      <li>
+        <a href="#">ATHENS</a>
+        <ul class="menu vertical">
+          <li><a href="#">Villa</a></li>
+          <li><a href="#">Condo</a></li>
+          <li><a href="#">Ranch</a></li>
+        </ul>
+      </li>
+      <li><a href="#">TEL-AVIV</a></li>
+      <li><a href="#">CYPRUS</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li><button type="button" class="button">Search</button></li>
+    </ul>
+  </div>
+</div>
+
+
+<ul class="example-orbit" data-orbit     data-options="animation:slide;
+                  pause_on_hover:true;
+                  animation_speed:500;
+                  navigation_arrows:true;
+                  bullets:false;" >
+  <li>
+    <img src="villa1.jpg" alt="slide 1" />
+    <div class="orbit-caption">
+      Caption One.
+    </div>
+  </li>
+  <li class="active">
+    <img src="villa2.jpg" alt="slide 2" />
+    <div class="orbit-caption">
+      Caption Two.
+    </div>
+  </li>
+  <li>
+    <img src="villa3.jpg" alt="slide 3" />
+    <div class="orbit-caption">
+      Caption Three.
+    </div>
+  </li>
+</ul>
+
+<script>
+
+$(document).foundation({
+  orbit: {
+    animation: 'slide',
+    timer_speed: 1000,
+    pause_on_hover: true,
+    animation_speed: 500,
+    navigation_arrows: true,
+    bullets: false
+  }
+});
+
+   $(document).ready(function() {
+      $(document).foundation();
+   })
+</script>
+
+
+
+
+
+</body>
+</html>
+
